@@ -55,6 +55,7 @@ class Song
     song = Song.find_or_create_by_name(parse[1])
     artist.add_song(song)
     song.artist = artist 
+    song 
   end 
   
   def self.create_from_filename(filename)
