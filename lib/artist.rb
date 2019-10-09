@@ -49,7 +49,7 @@ class Artist
       if genre_array.include?(song.genre)
         nil 
       else 
-       genre_array << song 
+       genre_array << song.genre  
      end 
    end 
    genre_array
