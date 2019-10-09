@@ -31,6 +31,8 @@ class Artist
   def add_song(song)
     if song.artist.nil?
       song.artist = self if Song.all.select {|song| song.name == song}
+    else 
+      @songs << song 
     end 
   end 
   
