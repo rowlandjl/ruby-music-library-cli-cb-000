@@ -54,6 +54,7 @@ class MusicLibraryController
     input = gets.strip 
     
     array = Song.all.sort{|a,b| a.name <=> b.name} 
+    song = array[input-1]
     puts "Playing #{array[input-1].song.name}"
   end 
   
