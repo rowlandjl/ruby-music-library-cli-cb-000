@@ -52,11 +52,11 @@ class Song
   def self.new_from_filename(filename)
     parse = filename.split(" - ")
     artist = Artist.find_or_create_by_name(parse[0])
-    genre = Genre.find_or_create_by_name
+    genre = Genre.find_or_create_by_name(parse[2].split(".mp3").join)
     
-    artist = parse[0]
-    song = parse[1]
-    genre = parse[2].split(".mp3").join 
+    # artist = parse[0]
+    # song = parse[1]
+    # genre = parse[2].split(".mp3").join 
     artist.add_song(song)
     song.artist = artist 
     song 
