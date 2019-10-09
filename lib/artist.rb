@@ -36,7 +36,11 @@ class Artist
   
   def genres 
     # binding.pry 
-    @songs.collect {|song| song.genre}  
+    genre_array = []
+    if genre_array.include?(self)
+      nil 
+    else 
+     @songs.collect {|song| song.genre}  
   end 
   
 end 
