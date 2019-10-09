@@ -38,6 +38,8 @@ class Artist
     if @songs.include?(song) 
       nil 
     else 
+      @songs << song 
+    end 
   end 
   
   def genres 
