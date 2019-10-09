@@ -31,8 +31,8 @@ class Artist
   def add_song(song)
     if song.artist.nil?
       song.artist = self if Song.all.select {|song| song.name == song}
-      self.songs << song 
     end 
+    self.songs << song 
   end 
   
   def genres 
