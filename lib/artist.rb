@@ -37,10 +37,14 @@ class Artist
   def genres 
     # binding.pry 
     genre_array = []
-    if genre_array.include?(self)
-      nil 
-    else 
-     @songs.collect {|song| song.genre}  
+    @songs.map do |song| 
+      if genre_array.include?(song)
+        nil 
+      else 
+       genre_array << song 
+     end 
+   end 
+   genre_array
   end 
   
 end 
