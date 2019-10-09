@@ -39,7 +39,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.strip 
     
-    
+    Artist.find_by_name(input).songs.
   end 
   
   def list_songs_by_genre
