@@ -32,7 +32,7 @@ class Artist
     if song.artist.nil?
       song.artist = self if Song.all.select {|song| song.name == song}
     end 
-    if !song.name.include?(song)
+    if !song.include?(song)
       self.songs << song 
     end 
   end 
