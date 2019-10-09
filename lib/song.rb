@@ -53,7 +53,7 @@ class Song
     parse = filename.split(" - ")
     artist = Artist.find_or_create_by_name(parse[0])
     genre = Genre.find_or_create_by_name(parse[2].split(".mp3").join)
-    self.new(parse[0], artist, genre)
+    self.new(parse[1], artist, genre)
     
     # artist = parse[0]
     # song = parse[1]
