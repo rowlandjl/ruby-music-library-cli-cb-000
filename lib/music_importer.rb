@@ -10,6 +10,7 @@ class MusicImporter
   end 
   
   def import 
+    self.files.each {|file| 
   end 
   
 end 
