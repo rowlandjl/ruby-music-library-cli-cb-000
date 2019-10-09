@@ -7,7 +7,7 @@ class MusicLibraryController
   end 
   
   def call 
-    input = gets.strip
+    input = nil 
     
     until input.downcase == 'exit'
       puts "Welcome to your music library!"
