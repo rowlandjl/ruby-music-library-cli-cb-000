@@ -54,7 +54,7 @@ class Song
     
     artist = parse[0]
     song = parse[1]
-    genre = parse[2]
+    genre = parse[2].split(".mp3")
     artist.add_song(song)
     song.artist = artist 
     song 
