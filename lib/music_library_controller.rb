@@ -20,7 +20,6 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
       input = gets.strip.downcase  
-    end 
     
     case input 
       when "list songs"
@@ -36,6 +35,7 @@ class MusicLibraryController
       when "play song"
         play_song
       end 
+    end 
   end 
   
   def list_songs 
