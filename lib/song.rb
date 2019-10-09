@@ -53,7 +53,8 @@ class Song
     parse = filename.split(" - ")
     
     artist = parse[0]
-    song = Song.find_or_create_by_name(parse[1])
+    song = parse[1]
+    genre = parse[2]
     artist.add_song(song)
     song.artist = artist 
     song 
