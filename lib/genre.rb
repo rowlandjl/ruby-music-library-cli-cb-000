@@ -31,6 +31,9 @@ class Genre
   end 
   
   def artists 
+    artist_array = []
+    @songs.map do |song| 
+      
   end 
   
 end 
