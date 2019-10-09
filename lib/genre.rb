@@ -33,7 +33,7 @@ class Genre
   def artists 
     artist_array = []
     @songs.map do |song| 
-      
+      if artist_array.include?(song.artist)
   end 
   
 end 
